@@ -1,13 +1,13 @@
 {% set name = "napari-bigfish" %}
-{% set version = "0.4" %}
+{% set version = "0.7" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-bigfish-{{ version }}.tar.gz
-  sha256: 1db253bf643137dfe99acf5e100ec9e235e6915905785d665035fa4b077d394b
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: f241f3ef6c86224f81b60f981f5308adbfb002a657e3e4502d631c9a160edcd2
 
 build:
   noarch: python
